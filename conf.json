@@ -1,0 +1,82 @@
+{
+  "user_name": "*******nicehash btc address*******",
+  "miner_name": "*******miner name********",
+  "currency": "USD",
+  "pwrcost": 0.0,
+  "min_profit": 0.0,
+  "miners":
+  {
+    "Cryptonight":
+    {
+      "bin": "/usr/bin/ccminer-cryptonight -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0.00000058, "power": 0.100,
+      "last_benchmark": "2018-01-21"
+    },
+    "Equihash":
+    {
+      "bin": "/usr/bin/zecminer --eexit 3 --pec --server {HOST} --port {PORT} --user {NAME}.{MINER} --pass x",
+      "speed": 0.000000550, "power": 0.130,
+      "last_benchmark": "2018-01-21"
+    },
+    "Ethash":
+    {
+      "bin": "/usr/bin/ethminer -S {HOST}:{PORT} -O {NAME}.{MINER}:x -U",
+      "speed": 0.0223, "power": 0.140,
+      "last_benchmark": "2018-01-21"
+    },
+    "Groestl":
+    {
+      "bin": "/usr/bin/ccminer -a groestl -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0.0445, "power": 0.150,
+      "last_benchmark": "2018-01-21"
+    },
+    "Keccak":
+    {
+      "bin": "/usr/bin/ccminer -a keccak -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0, "power": 0.525,
+      "last_benchmark": "2018-01-21"
+    },
+    "Lyra2RE2":
+    {
+      "bin": "/usr/bin/ccminer -a lyra2v2 -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0.0465, "power": 0.150,
+      "last_benchmark": "2018-01-21"
+    },
+    "Myriad-Groestl":
+    {
+      "bin": "/usr/bin/ccminer -a myr-gr -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0, "power": 0.525,
+      "last_benchmark": "2018-01-21"
+    },
+    "NeoScrypt":
+    {
+      "bin": "/usr/bin/ccminer -a neoscrypt -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0.00106, "power": 0.150,
+      "last_benchmark": "2018-01-21"
+    },
+    "Qubit":
+    {
+      "bin": "/usr/bin/ccminer -a qubit -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0, "power": 0.505,
+      "last_benchmark": "2018-01-21"
+    },
+    "Skein":
+    {
+      "bin": "/usr/bin/ccminer -a skein -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0, "power": 0.520,
+      "last_benchmark": "2018-01-21"
+    },
+    "X11":
+    {
+      "bin": "/usr/bin/ccminer -a x11 -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0, "power": 0.485,
+      "last_benchmark": "2018-01-21"
+    },
+    "Nist5":
+    {
+      "bin": "/usr/bin/ccminer -a nist5 -o stratum+tcp://{HOST}:{PORT} -u {NAME}.{MINER} -p x",
+      "speed": 0.058, "power": 0.150,
+      "last_benchmark": "2018-01-21"
+    }
+  }
+}
